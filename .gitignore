@@ -1,0 +1,36 @@
+# =============================================================================
+# 1. Copyright & Third-Party Academic Literature Protection (第三方文献版权隔离)
+# 第三方学术论文、专著与企业白皮书的本地 PDF/HTML/EPUB 原文归档严格排除在版本控制之外，
+# 完整的文献编号、arXiv ID、DOI 与官方公开下载直链清单见 ./papers/README.md
+# =============================================================================
+*.pdf
+*.html
+*.epub
+papers/**/*.pdf
+papers/**/*.html
+papers/**/*.epub
+papers/prop3/chroma2025_context_rot.md
+
+# 严格保留各级题录索引与公开下载清单 (Track Bibliographical Manifests)
+!papers/README.md
+!papers/**/README.md
+!papers/download_papers.sh
+
+# =============================================================================
+# 2. Private Research & Internal Strategy Notes (Local Only)
+# 内部认知天梯对标与二级市场投研笔记仅保留在本地，不随学术主仓库公开上传
+# =============================================================================
+cognitive_tier_investigation_2026.md
+stock_market_phase_scanner_2026.md
+
+# =============================================================================
+# 3. Local Audio/Video Build Artifacts & System Files
+# =============================================================================
+adapted_script.md
+slide_blueprint.json
+config.json
+agent_or_code.md
+output
+output/
+.DS_Store
+**/.DS_Store
