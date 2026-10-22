@@ -40,6 +40,40 @@
 
 ---
 
+### 🧭 3. 配套架构把脉 Skill：`ask-shiheng`（三问一处方）
+
+为了让本手册的理论直接转化为日常开发中的工程决策，仓库内置了配套的百行极简架构领航 Skill —— **[`./skills/ask-shiheng/SKILL.md`](./skills/ask-shiheng/SKILL.md)**（兼容 Antigravity / Claude Code / Cursor 等支持 `SKILL.md` 的 AI 编程助手）。
+
+#### 📦 安装方式
+```bash
+# 方式一：通过 skills CLI 一键安装（适用于 Cursor / Claude Code 等）
+npx skills@latest add Pabears/agent_in_practical --skill ask-shiheng
+
+# 方式二：软链至本地 Agent 全局配置目录
+# Antigravity:
+ln -sfn "$(pwd)/skills/ask-shiheng" ~/.gemini/config/skills/ask-shiheng
+# Claude Code:
+ln -sfn "$(pwd)/skills/ask-shiheng" ~/.claude/skills/ask-shiheng
+# Cursor:
+ln -sfn "$(pwd)/skills/ask-shiheng" ~/.cursor/skills/ask-shiheng
+```
+
+#### 🚀 触发与使用方式（「三问一处方，开方即收刀」）
+在新立项或改造现有项目时，只需对 Agent 说：
+> *“用 `ask-shiheng` 帮我把把脉：我想做一个 [你的项目/功能描述]，怎么切分代码和 AI 的边界、怎么落地？”*
+
+`ask-shiheng` 不会盲目堆砌多 Agent 框架或直接乱写代码，而是严格走完三步：
+1. **第一步：初诊与「三问把脉」**（向你发起 3 个极简交互选择题）：
+   - **第一问（定物态）**：将功能模块切分为 `🪨 固态（100% 纯代码，严禁沾 LLM）`、`💧 液晶态（LLM + 严格 Schema 单步提取）`、`🌊 受控液态（装在固态容器内的极简 Agent）` 与 `☁️ 气态（脑暴/文档，与生产写操作物理隔离）`；
+   - **第二问（定裁判）**：按容错率知情选配验收门禁——`🛡️ 档位 A：符号固态门禁`（编译器/Schema/单测全自动闭环）、`👀 档位 B：LLM 初筛 + 人在环终审`（适合写文档/脑暴/设计）、或 `🎲 档位 C：纯 LLM 自省放飞`（温和提示 `84.45%` 漏检风险后，100% 尊重用户选择）；
+   - **第三问（定锚点）**：遵循 **Middle-Out（由中向外）** 原则，锁定第一期最核心的 **1 个真实业务写操作（Action / 交付物）**。
+2. **第二步：开具《时恒物态架构处方单》**：
+   - 自动输出一页纸高密度处方：**模块物态与裁判切分表** + **外硬内柔 $\mathcal{M}_{\text{hybrid}}$ 状态机拓扑图（Mermaid）** + **防上下文腐败（$\Phi_{\text{MCP}}$）红线** + **第一步落子建议**。
+3. **第三步：克制收刀（Stop & Route）**：
+   - 开完方子立即停手，由你决定是先保存为项目的 `PHASE_SPEC.md` 还是按第一步正式动工。
+
+---
+
 ## ⚖️ 开源许可协议 (License)
 
 本项目采用 **[GNU General Public License v3.0 (GPLv3)](./LICENSE)** 授权发布：
