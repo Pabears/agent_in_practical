@@ -18,7 +18,13 @@
 
 ---
 
-### 📘 1. 完整版技术手册与深度推导
+### 🎬 1. 旗舰工程实战案例（液晶态软件落地解析）
+- 🏆 **[《什么是液晶态软件，以及它为什么如此有用？——以多模态状态编译引擎 Apostle 为例》（`./case_study_liquid_crystal_apostle.md`）](./case_study_liquid_crystal_apostle.md)**  
+  以多模态内容编译引擎 Apostle 为工程案例，复盘“《施公案》第 9 集敲碎契约引发的相变坍缩事故”，拆解 TFT-LCD 六大组件工程映射、确定性先行（MM 原则）、“液晶屏坏点与偏色”的局部容错校准机制、11 条跨集状态不变量符号门禁（`invariants.ts`）、`pipelineTid` 事务防越集跳步、TypeScript AST 语法树安全改写器以及统一双层透明舞台（DOM + Three.js）8 轨确定性时间轴编译。
+
+---
+
+### 📘 2. 完整版技术手册与深度推导
 - 📘 **[《软件物态学：晶体、流体与制度性实在》（完整版手册 `./software_phases.md`）](./software_phases.md)**
   - **命题零（物态篇）：什么软件需要 LLM？（软件物态分类学与主体间实在凝华）**——按 `[目的 Telos, 过程 Process, 结构 Schema]` 的自由度将软件划分为三种实用工具物态：**固态（晶体传统软件）**、**液晶态（LLM+ 结构化转换）**、**受控液态（装在晶体容器内的 Agent 个人助理）**，以及跨越工具与存在主义主体边界的**第四态（气态）**；并结合约翰·塞尔（Searle）构成性规则与波普尔（Popper）“世界 3 向下因果律”，阐明群体虚无共识凝华为**「制度性晶体（Institutional Crystal）」**的物理机制。
   - **命题一（心智篇）：AI 是晶体智力还是流体智力？**——剖析参数化静态晶格检索（有限集深度搜索）与 Transformer 前向传播内嵌的预条件梯度下降（$GD++$）及二阶牛顿-舒尔茨伪逆迭代，确立**状态空间复杂度阈值定律**（亚临界流体模拟 vs. 超临界气化相变崩溃）。
@@ -27,7 +33,7 @@
 
 ---
 
-### 🔬 2. 四大命题专题核查报告与原始文献清单（Fact-Checking & Bibliography）
+### 🔬 3. 四大命题专题核查报告与原始文献清单（Fact-Checking & Bibliography）
 
 > **文献获取说明**：为严格尊重各学术出版机构与原作者版权，本地 `.pdf` 原文已通过 [`.gitignore`](./.gitignore) 忽略。完整的 **45 篇权威文献编号、arXiv ID、DOI、官方下载直链及一键拉取脚本** 均收录于 [**`./papers/README.md`**](./papers/README.md)。
 
@@ -40,7 +46,7 @@
 
 ---
 
-### 🧭 3. 配套架构把脉 Skill：`ask-shiheng`（三问一处方）
+### 🧭 4. 配套架构把脉 Skill：`ask-shiheng`（三问一处方）
 
 为了让本手册的理论直接转化为日常开发中的工程决策，仓库内置了配套的百行极简架构领航 Skill —— **[`./skills/ask-shiheng/SKILL.md`](./skills/ask-shiheng/SKILL.md)**（兼容 Antigravity / Claude Code / Cursor 等支持 `SKILL.md` 的 AI 编程助手）。
 
