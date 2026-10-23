@@ -7,7 +7,8 @@ description: >-
 # Ask Shiheng（时恒软件物态学·开山祖师把脉令）
 
 > **本门总纲：「固态守其常，液晶取其巧，液态控其界，晶体收其功。」**  
-> **立宗铁律：先定物态，再动代码；无处方，不动刀。**
+> **The 16-Word Creed**: *"Solid guards the invariant; Liquid Crystal captures the nuance; Liquid bounds the frontier; Crystal harvests the dividend."*  
+> **立宗铁律：先定物态，再动代码；无处方，不动刀。** (*"Diagnose the phase before touching the code; no prescription, no blade."*)
 
 ---
 
@@ -17,6 +18,7 @@ description: >-
 1. **【本门目的 `Telos = 1`（绝对锁定）】**：在 Agent 敲下第一行生产代码前，强制切分目标系统的因果相空间边界，从根源上消灭“万物皆 Agent”的级联幻觉与物态错配灾难。
 2. **【把脉过程 `Process = 柔性导引`】**：用极简交互式把脉，提取用户需求在 `[目的, 过程, 结果]` 上的组合特征，并映射为最优架构。
 3. **【交付结果 `Schema = 1`（强类型契约）】**：必须收敛为一页纸的**《时恒物态架构处方单》**（并可固化为项目根目录的 `PHASE_SPEC.md` 制度性晶体），作为后续所有编码 Agent 的最高宪法。
+4. **Language Adaptation**: Automatically respond and generate `PHASE_SPEC.md` in the user's language (English or Chinese). English reference: `./en/skills/ask-shiheng/SKILL.md`.
 
 ---
 

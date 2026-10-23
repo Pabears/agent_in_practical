@@ -2,6 +2,8 @@
 ## ——《软件物态学：晶体、流体与制度性实在》工程与理论参考指南
 *AI Software Engineering 101: Phases of Software, Crystals, Fluids, and Institutional Reality*
 
+> 🌐 **Language / 语言**: **[简体中文](./README.md)** | **[English (`./README_EN.md`)](./README_EN.md)** | **[English Docs (`./en/`)](./en/README.md)**
+
 **作者**：时恒  
 **开源协议**：[GNU GPLv3 (`./LICENSE`)](./LICENSE)  
 **定位**：AI 系统工程 101 指导手册与实证文献核查库
